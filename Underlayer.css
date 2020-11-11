@@ -58,18 +58,24 @@ header{
 .header-nav-wrapper ul li{
 	padding: 0 28px;
 	list-style: none;
+	border-left: 0.5px solid #ffffff;
+}
+.last-list{
+	border-right: 0.5px solid #ffffff;
 }
 .header-nav-wrapper ul li a{
 	text-decoration: none;
 	color: #ffffff;
 	font-size: 27px;
 	font-family: 'Noto Sans JP', sans-serif;
+	letter-spacing: 5.4px;
 }
 .link-button{
 	position: absolute;
 	z-index: 20;
-	top: 0;
-	right: 0;
+	top: 3%;
+	right: 3%;
+	margin: 5px;
 }
 .link-button p{
 	
@@ -97,8 +103,9 @@ header{
 .twitter-link-button{
 	position: absolute;
 	z-index: 20;
-	top: 10%;
-	right: 0;
+	top: 12%;
+	right: 3%;
+	margin: 5px;
 }
 .link-button p{
 	
@@ -112,6 +119,8 @@ header{
 	right: 0%;
 	color: #ffffff;
 	font-size: 19px;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 100;
 	text-decoration: none;
 }
 
@@ -124,17 +133,43 @@ header{
 }
 .main-title{
 	position: absolute;
+	z-index: 30;
 	top: 50%;
 	left: 50%;
+	transform: translate(-50%,-50%);
+	
 }
 .main-title-wrapper{
 	position: relative;
-	z-index: 30;
-	width: 100vw;
+	width: 27vw;
+	height: 20vh;
+	left: 0;
+	right: 0;
 }
 .main-title-wrapper h1{
+	position: absolute;
 	color: #ffffff;
-	font-size: 54px;
+	font-size: 3em;
+	font-family: 'Noto Sans JP', sans-serif;
+	margin: 5px;
+}
+.title-line{
+	width: 400px;
+	height: 0.5px;
+	background-color: #ffffff;
+	position: absolute;
+	z-index: 40;
+	top: 50%;
+	left: 35%;
+	transform: rotate(-45deg);
+}
+.title-RACE{
+	top: 0;
+	left: 0;
+}
+.title-GROUP{
+	bottom: 0;
+	right: 0;
 }
 
 .roadrace{
@@ -145,18 +180,41 @@ header{
 	width: 50vw;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 }
 .roadrece-version h3{
+	position: relative;
+	width: 300px;
+	height: 40px;
+	text-align: center;
 	color: #14274E;
-	font-size: 37px;
+	font-size: 2em;
 	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 100; 
+	margin-left: 40px;
+}
+.roadrece-version h3::after, .roadrece-version h3::before{
+	position: absolute;
+	content: "";
+	border-left: 0.2px solid #14274E;
+	width: 0;
+	height: 45px;
+	transform: rotate(45deg);
+}
+.roadrece-version h3::after{
+	right: 0;
+	top: 0;
+}
+.roadrece-version h3::before{
+	top: 0;
+	left: 0;
 }
 .roadrece-version p{
 	color: #14274E;
-	font-size: 25px;
+	font-size: 1em;
 	font-family: 'Noto Sans JP', sans-serif;
+	margin-left: 40px;
 }
 .trackrace{
 	display: flex;
@@ -166,28 +224,119 @@ header{
 	width: 50vw;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: center;
+	margin-right: 40px;
 }
 .trackrece-version h3{
+	position: relative;
+	width: 300px;
+	height: 40px;
+	text-align: center;
 	color: #14274E;
-	font-size: 37px;
+	font-size: 2em;
 	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 100;
+}
+.trackrece-version h3::after, .trackrece-version h3::before{
+	position: absolute;
+	content: "";
+	border-left: 0.2px solid #14274E;
+	width: 0;
+	height: 45px;
+	transform: rotate(45deg);
+}
+.trackrece-version h3::after{
+	right: 0;
+	top: 0;
+}
+.trackrece-version h3::before{
+	top: 0;
+	left: 0;
 }
 .trackrece-version p{
 	color: #14274E;
-	font-size: 25px;
+	font-size: 1em;
 	font-family: 'Noto Sans JP', sans-serif;
 }
-
+.cyclocross{
+	display: flex;
+	justify-content: flex-end;
+}
+.cyclocross-version{
+	width: 50vw;
+	margin-left: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+.cyclocross-version h3{
+	position: relative;
+	width: 300px;
+	height: 40px;
+	text-align: center;
+	color: #14274E;
+	font-size: 2em;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 100;
+}
+.cyclocross-version h3::after, .cyclocross-version h3::before{
+	position: absolute;
+	content: "";
+	border-left: 0.2px solid #14274E;
+	width: 0;
+	height: 45px;
+	transform: rotate(45deg);
+}
+.cyclocross-version h3::after{
+	right: 0;
+	top: 0;
+}
+.cyclocross-version h3::before{
+	top: 0;
+	left: 0;
+}
+.cyclocross-version p{
+	color: #14274E;
+	font-size: 1em;
+	font-family: 'Noto Sans JP', sans-serif;
+}
 footer{
 	width: 100vw;
 	height: 224px;
 	background-color: #14274E;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: flex-end;
 }
+.footer-link-button{
+	margin: 5px;
+	position: relative;
+}
+.footer-link-button p{
+	
+}
+.contact-title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #14274E;
+	font-size: 1em;
+	line-height: 11px;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 100;
+	text-decoration: none;
+}
+.R3{
+	width: 143px;
+	height: 33px;
+}
+.p3{
+	fill: #ffffff;
+}
+
 .footer-title{
 	
 }
@@ -200,15 +349,20 @@ footer{
 .footer-title small{
 	color: #ffffff;
 	font-size: 11px;
+	text-align: center;
 }
-.footer-nav-wrapper{
-	
+.footer-nav-wrapper ul{
+	padding: 0;
 }
 .footer-nav-wrapper ul li{
 	list-style: none;
+	width: 80px;
 	border-top: 0.5px solid #ffffff;
 	padding: 9px 0;
 	text-align: center;
+}
+.footer-last-list{
+	border-bottom: 0.5px solid #ffffff;
 }
 .footer-nav-wrapper ul li a{
 	text-decoration: none;
@@ -227,22 +381,22 @@ footer{
 .line1{
 	width: 100%;
 	height: 20vh;
-	background-color: #f1f6f9;
-	animation: firstanime 2.5s forwards;
+	background-color: #14274E;
+	animation: firstanime 1.5s forwards;
+	animation-delay: 1s;
 }
 .line2{
 	width: 100%;
 	height: 20vh;
-	background-color: #9ba4b4;
+	background-color: #14274E;
 	animation: firstanime 2s forwards;
 	animation-delay: 0.5s;
 }
 .line3{
 	width: 100%;
 	height: 20vh;
-	background-color: #394867;
-	animation: firstanime 1.5s forwards;
-	animation-delay: 1s;
+	background-color: #14274E;
+	animation: firstanime 2.5s forwards;
 }
 .line4{
 	width: 100%;
@@ -254,6 +408,7 @@ footer{
 .line5{
 	width: 100%;
 	height: 20vh;
-	background-color: #1b262c;
-	animation: firstanime 2.5s forwards;
+	background-color: #14274E;
+	animation: firstanime 1.5s forwards;
+	animation-delay: 1s;
 }

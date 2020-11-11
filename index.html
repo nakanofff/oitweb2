@@ -5,6 +5,9 @@
 <meta name="Description" content="大阪工業大学サイクリング部の最新の公式ウェブサイトです。普段の私たちの活動内容を紹介いたします。">
 <title>大阪工業大学サイクリング部</title>
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="animate.css">
+<script src="wow.min.js"></script>
 </head>
 
 <body>
@@ -17,12 +20,14 @@
 			<div class="bgimg img4"></div>
 		</div>
 		
+		<div class="header-background-cover"></div>
+		
 		<nav class="header-nav-wrapper">
 			<ul>
 				<li><a href="index.html">HOME</a></li>
 				<li><a href="#">ABOUT</a></li>
 				<li><a href="RACE.html">RACE</a></li>
-				<li><a href="TOUR.html">TOUR</a></li>
+				<li class="last-list"><a href="TOUR.html">TOUR</a></li>
 			</ul>
 		</nav>
 		
@@ -33,7 +38,7 @@
 					</polygon>
 			
 				</svg>
-			<p><a class="contact-title" href="#">CONTACT</a></p>
+			<p><a class="contact-title" href="contact.html">CONTACT</a></p>
 
 		</div>
 		
@@ -45,12 +50,12 @@
 			
 				</svg>
 			
-		<p><a class="twitter-title" href="#">CONTACT</a></p>
+		<p><a class="twitter-title" href="#">TWITTER</a></p>
 		</div>
 
 		
 		<div class="main-title">
-			<h1>OsakaInstituteofTechnology<br>CYCLING CLUB</h1>
+			<h1><span class="title-feature">O</span>saka<span class="title-feature">I</span>nstituteof<span class="title-feature">T</span>echnology<br>CYCLING CLUB</h1>
 		</div>
 		
 		<div class="scroll">
@@ -61,11 +66,11 @@
 	
 	<section class="about">
 		<div class="about-img">
-			<img src="IMG_1569.JPG" class="mask" alt="シクロクロス画像">
+			<img src="IMG_1569.JPG" style="width: 100%" height="400px" alt="シクロクロス画像">
 			
 		</div>
 		
-		<div about-text>
+		<div class="about-text">
 			<h2>ABOUT</h2>
 			<p>大阪工業大学のサイクリング部は<br>
                レースを主に活動しているレース班<br>
@@ -78,8 +83,9 @@
 	
 	<section class="race-group">
 		<div class="race-bg">
-			<p>RACE</p>
-			<p>GROUP</p>
+			<div class="background-cover"></div>
+				<p class="section-titleA">RACE</p>
+				<p class="section-titleB">GROUP</p>
 			<div class="slash"></div>
 		</div>
 		
@@ -87,8 +93,9 @@
 	
 	<section class="tour-group">
 		<div class="tour-bg">
-			<p>TOUR</p>
-			<p>GROUP</p>
+			<div class="background-cover"></div>
+				<p class="section-titleA">TOUR</p>
+				<p class="section-titleB">GROUP</p>
 			<div class="slash"></div>
 		</div>
 	
@@ -117,6 +124,14 @@
 		</div>
 
 	</footer>
+	
+	<div class="first-animation">
+		<div class="line1"></div>
+		<div class="line2"></div>
+		<div class="line3"></div>
+		<div class="line4"></div>
+		<div class="line5"></div>
+	</div>
 	
 </body>
 </html>

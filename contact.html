@@ -2,48 +2,24 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="Description" content="大阪工業大学サイクリング部、レース班の活動内容を紹介します。">
-<title>大阪工業大学サイクリング部-レース班-</title>
+<title>大阪工業大学サイクリング部-お問い合わせ-</title>
+<link rel="stylesheet" href="Underlayer2.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="Underlayer.css">
 <link rel="stylesheet" href="animate.css">
 <script src="wow.min.js"></script>
-<script>
-	new WOW().init();
-</script>
-
 </head>
 
 <body>
-	<header class="wow fadeIn">
-		<div class="header-background">
-			<div class="race-img1"></div>
-			<div class="race-img2"></div>
-			<div class="race-img3"></div>
-		</div>
-		
-		<div class="background-cover"></div>
-		
+	
+	<header>
 		<nav class="header-nav-wrapper">
 			<ul>
 				<li><a href="index.html">HOME</a></li>
-				<li><a href="#">ABOUT</a></li>
+				<li><a href="RACE.html">ABOUT</a></li>
 				<li><a href="#">RACE</a></li>
-				<li class="last-list"><a href="#">TOUR</a></li>
+				<li><a href="#">TOUR</a></li>
 			</ul>
 		</nav>
-		
-		<div class="link-button wow fadeInRight" data-wow-delay="1.5s">
-				<svg version="1.1" id="R1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 232 54" style="enable-background:new 0 0 232 54;" xml:space="preserve">
-		<polygon id="p1" points="232,0 22.1,0 22.1,0 0,22.1 0.1,22.2 0,22.2 0,54 209.9,54 209.9,54 232,31.9 231.9,31.8 232,31.8 ">
-					</polygon>
-			
-				</svg>
-			<p><a class="contact-title" href="#">CONTACT</a></p>
-
-		</div>
-		
 		<div class="twitter-link-button wow fadeInRight" data-wow-delay="1.7s">
 				<svg version="1.1" id="R2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 232 54" style="enable-background:new 0 0 232 54;" xml:space="preserve">
@@ -54,50 +30,36 @@
 			
 		<p><a class="twitter-title" href="#">TWITTER</a></p>
 		</div>
-		
-		<div class="title-line"></div>
-		
-		<div class="main-title">
-			<div class="main-title-wrapper">
-				<h1 class="title-RACE wow fadeInRight" data-wow-delay="1s">RECE</h1>
-				<h1 class="title-GROUP wow fadeInRight" data-wow-delay="1s">GROUP</h1>
-			</div>
-		</div>
-		
-		
 	</header>
 	
 	<main>
-		<div class="roadrace">
-			<img src="IMG_1584.JPG" alt="ロードレース画像" style="width: 50vw;" class="wow fadeInLeft" data-wow-delay="1s">
-			<div class="roadrece-version">
-				<h3 class="wow fadeInRight">ロードレース</h3>
-				<p class="wow fadeInRight" data-wow-delay="0.5s">公道やサーキットなどの舗装路を走<br>
-					る競技です。単純な着順で順位が決<br>
-					まり、距離も20km〜200kmなど様々です。</p>
+		<section class="form-title">
+			<h1>CONTACT</h1>
+			<p>入部やその他のお問い合わせ等は以下のフォームよりお送りください。<br>
+				また、大阪工業大学学生の方は学生番号の記入もお願いいたします。</p>
+		</section>
+
+		<form method="post" action="">
+			<div class="form-section">
+				<p>氏名</p>
+				<input type="text" class="short-text">
 			</div>
-		</div>
-		
-		<div class="trackrace">
-			<div class="trackrece-version">
-				<h3 class="wow fadeInLeft" data-wow-delay="1s">トラックレース</h3>
-				<p class="wow fadeInLeft" data-wow-delay="1.5s">一周400mほどのすり鉢状の自転車競技専用<br>
-				   の走路を使い行われるレースです。トラック<br>
-					レースの中にも多くの種目が存在します。</p>
+			<div class="form-section">
+				<p>学生番号（学生の方のみ）</p>	
+				<input type="text" class="short-text">
 			</div>
-			<img src="IMG_B925EDF5C01C-1.jpeg" alt="トラックレース画像" style="width: 50vw;" class="fadeInRight" data-wow-delay="1s">
-		</div>
-		
-		<div class="cyclocross">
-			<img src="IMG_1569.JPG" alt="シクロクロス画像" style="width: 50vw;" class="wow fadeInLeft" data-wow-delay="1s">
-			<div class="cyclocross-version">
-				<h3 class="wow fadeInRight" data-wow-delay="1s">シクロクロス</h3>
-				<p class="wow fadeInRight" data-wow-delay="1.5s">見舗装路の周回コースを走るレースです。<br>
-					途中には障害物があり自転車を押した<br>
-					り担いだりする必要のあるレースです。</p>
+			<div class="form-section">
+				<p>メールアドレス</p>
+				<input type="email" class="short-text">
 			</div>
-		</div>
-	
+			<div class="text-section">
+				<p>お問い合わせ内容</p>
+				<textarea name="contact" id="" cols="30" rows="10" class="long-text"></textarea>
+			</div>
+			<div class="button-section">
+				<input type="submit" value="送信" class="submit-button">
+			</div>
+		</form>
 	</main>
 	
 	<footer>

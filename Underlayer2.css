@@ -1,0 +1,260 @@
+@charset "UTF-8";
+/* CSS Document */
+@keyframes firstanime{
+	100%{
+		width: 0vw;
+	}
+}
+@keyframes firstaimeafter{
+	100%{
+		display: none;
+	}
+}
+body{
+	padding: 0;
+	margin: 0;
+}
+header{
+	width: 100vw;
+	height: 220px;
+	background-image: url("IMG_1584.JPG");
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: space-between;
+}
+.header-nav-wrapper{
+	
+}
+.header-nav-wrapper ul{
+	display: flex;
+	align-items: flex-end;
+}
+.header-nav-wrapper ul li{
+	padding: 0 28px;
+	list-style: none;
+	border-left: 0.5px solid #ffffff;
+}
+.last-list{
+	border-right: 0.5px solid #ffffff;
+}
+.header-nav-wrapper ul li a{
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 27px;
+	font-family: 'Noto Sans JP', sans-serif;
+	letter-spacing: 5.4px;
+}
+
+main{
+	padding: 60px 140px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.form-title{
+	
+}
+.form-title h1{
+	position: relative;
+	width: 300px;
+	height: 40px;
+	text-align: center;
+	color: #14274E;
+	font-size: 2em;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 100; 
+	margin-left: 40px;
+}
+.form-title h1::after, .form-title h1::before{
+	position: absolute;
+	content: "";
+	border-left: 0.2px solid #14274E;
+	width: 0;
+	height: 45px;
+	transform: rotate(45deg);
+}
+.form-title h1::after{
+	right: 0;
+	top: 0;
+}
+.form-title h1::before{
+	top: 0;
+	left: 0;
+}
+.form-title p{
+	color: #14274E;
+	font-size: 1.5em;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 100; 
+}
+form{
+	
+}
+.form-section p{
+	margin: 8px;
+	color: #14274E;
+	font-size: 1em;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 100;
+}
+.short-text{
+	width: 485px;
+	height: 39px;
+	border: none;
+	background-color: #C6C6C6;
+	color: #14274E;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 100;
+	font-size: 1em;
+}
+.short-text:focus{
+	outline: 0.5px solid #14274E;
+}
+.text-section p{
+	margin: 8px;
+	color: #14274E;
+	font-size: 1em;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 100; 
+}
+.long-text{
+	width: 780px;
+	height: 140px;
+	border: none;
+	background-color: #C6C6C6;
+	color: #14274E;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 100;
+	font-size: 1em;
+}
+.long-text:focus{
+	outline: 0.5px solid #14274E;
+}
+.submit-button{
+	margin-top: 24px;
+	width: 485px;
+	height: 39px;
+	background-color: #14274E;
+	color: #ffffff;
+	border: none;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 100;
+	transition: 0.5s;
+}
+.submit-button:hover{
+	background-color: #900c3f;
+}
+
+footer{
+	width: 100vw;
+	height: 224px;
+	background-color: #14274E;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+.footer-link-button{
+	margin: 5px;
+	position: relative;
+}
+.footer-link-button p{
+	
+}
+.contact-title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #14274E;
+	font-size: 1em;
+	line-height: 11px;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 100;
+	text-decoration: none;
+}
+.R3{
+	width: 143px;
+	height: 33px;
+}
+.p3{
+	fill: #ffffff;
+}
+
+.footer-title{
+	
+}
+.footer-title h2{
+	color: #ffffff;
+	font-size: 35px;
+	line-height: 32px;
+	margin: 7px;
+}
+.footer-title small{
+	color: #ffffff;
+	font-size: 11px;
+	text-align: center;
+}
+.footer-nav-wrapper ul{
+	padding: 0;
+}
+.footer-nav-wrapper ul li{
+	list-style: none;
+	width: 80px;
+	border-top: 0.5px solid #ffffff;
+	padding: 9px 0;
+	text-align: center;
+}
+.footer-last-list{
+	border-bottom: 0.5px solid #ffffff;
+}
+.footer-nav-wrapper ul li a{
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 16px;
+}
+
+.first-animation{
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: none;
+}
+.line1{
+	width: 100%;
+	height: 20vh;
+	background-color: #14274E;
+	animation: firstanime 1.5s forwards;
+	animation-delay: 1s;
+}
+.line2{
+	width: 100%;
+	height: 20vh;
+	background-color: #14274E;
+	animation: firstanime 2s forwards;
+	animation-delay: 0.5s;
+}
+.line3{
+	width: 100%;
+	height: 20vh;
+	background-color: #14274E;
+	animation: firstanime 2.5s forwards;
+}
+.line4{
+	width: 100%;
+	height: 20vh;
+	background-color: #14274e;
+	animation: firstanime 2s forwards;
+	animation-delay: 0.5s;
+}
+.line5{
+	width: 100%;
+	height: 20vh;
+	background-color: #14274E;
+	animation: firstanime 1.5s forwards;
+	animation-delay: 1s;
+}
