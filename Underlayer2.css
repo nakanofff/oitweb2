@@ -83,11 +83,19 @@ main{
 	top: 0;
 	left: 0;
 }
+.form-title h1::selection{
+	background-color: #14274E;
+	color: #ffffff;
+}
 .form-title p{
 	color: #14274E;
 	font-size: 1.5em;
 	font-family: 'Noto Sans JP', sans-serif;
 	font-weight: 100; 
+}
+.form-title p::selection{
+	background-color: #14274E;
+	color: #ffffff;
 }
 form{
 	
@@ -98,6 +106,10 @@ form{
 	font-size: 1em;
 	font-family: 'Noto Sans JP', sans-serif;
 	font-weight: 100;
+}
+.form-section p::selection{
+	background-color: #14274E;
+	color: #ffffff;
 }
 .short-text{
 	width: 485px;
@@ -118,6 +130,10 @@ form{
 	font-size: 1em;
 	font-family: 'Noto Sans JP', sans-serif;
 	font-weight: 100; 
+}
+.text-section p::selection{
+	background-color: #14274E;
+	color: #ffffff;
 }
 .long-text{
 	width: 780px;
