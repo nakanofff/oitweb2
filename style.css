@@ -17,6 +17,7 @@
 body{
 	padding: 0;
 	margin: 0;
+	background-color: #f0efef;
 }
 header{
 	position: relative;
@@ -249,6 +250,8 @@ header{
 	color: #ffffff;
 	font-size: 3em;
 	margin: 0;	
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 100;
 }
 .section-titleB{
 	position: absolute;
@@ -258,6 +261,8 @@ header{
 	color: #ffffff;
 	font-size: 3em;
 	margin: 0;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 100;
 }
 .slash{
 	position: absolute;
@@ -272,6 +277,19 @@ header{
 	transform: rotate(-45deg);
 	border-bottom: 0.5px solid #ffffff;
 }
+.section-about{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.section-about p{
+	color: #14247E;
+	font-size: 2em;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 100;
+	margin-top: 150px;
+	margin-bottom: 40px;
+}
 .tour-bg{
 	position: relative;
 	width: 100vw;
@@ -280,7 +298,34 @@ header{
 	background-position: center;
 	background-size: cover;
 }
-
+.bottom-link{
+	position: relative;
+	width: 100%;
+	height: 80px;
+	margin: 0;
+	display: block;
+	margin-bottom: 150px;
+}
+#R5{
+	position: absolute;
+	width: 335px;
+	fill: #14274E;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.bottom-link p{
+	position: absolute;
+	z-index: 100;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #ffffff;
+	font-size: 2em;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 100;
+	margin: 0;
+}
 
 footer{
 	width: 100vw;
